@@ -1,0 +1,18 @@
+<div class="success">
+  <p id="notice"><%=  notice %></p>
+</div>
+
+<div>
+  <p class = title>
+    <strong>Title:</strong>
+    <%= @book.title %>
+  </p>
+  
+  <p class = body>
+    <strong>Body:</strong>
+    <%= @book.body %>
+  </p>
+</div>
+
+<%= link_to "edit", edit_book_path(@book.id) %>
+<%= link_to 'back', '/books' %>
